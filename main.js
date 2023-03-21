@@ -3,11 +3,7 @@ const menuToggle = document.querySelector('.menu .menuList-toggle')
 
 
 menuToggle.addEventListener('click', function () {
-    menu.classList.add('show')
-})
-
-
-const closeToggle = document.querySelector('.menu .menu-list .close-toggle')
-closeToggle.addEventListener('click', function () {
-    menu.classList.remove('show')
+    menuToggle.children[0].classList.toggle("fa-xmark")
+    menuToggle.classList.toggle('white-toggle')
+    menu.classList.toggle('show')
 })
