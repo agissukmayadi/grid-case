@@ -200,15 +200,11 @@ body {
 .gallery .gallery-body .gallery-item {
     cursor: pointer;
     position: relative;
+    transition: 0.3s;
 }
 
-.gallery .gallery-body .gallery-item img {
-    transition: .5s;
-}
-
-.gallery .gallery-body .gallery-item:hover img {
+.gallery .gallery-body .gallery-item:hover {
     transform: scale(1.2);
-    position: absolute;
     z-index: 999;
 }
 
